@@ -1,10 +1,11 @@
 import os
-
 import pytest
 from appium import webdriver
-from appium.options.android import UiAutomator2Options
-from selene.support.shared import browser
 from dotenv import load_dotenv
+from selene.support.shared import browser
+from appium.options.android import UiAutomator2Options
+from wikipedia_app.utils.attachment import screenshot, screen_xml_dump, video_from_browserstack
+
 
 load_dotenv()
 
@@ -37,3 +38,10 @@ def app_config():
         }
     })
     browser.config.driver = webdriver.Remote("http://hub.browserstack.com/wd/hub", options=options)
+    yield
+    screenshot()
+    screen_xml_dump()
+    session_id = browser.driver.session_id
+    browser.quit()
+    browser.config.timeout = 4
+    video_from_browserstack(session_id)

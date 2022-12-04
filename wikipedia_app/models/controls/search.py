@@ -1,4 +1,4 @@
-from models.helpers import accessibility_id, selector_id
+from wikipedia_app.models.helpers import accessibility_id, selector_id
 from selene.support.shared import browser
 
 
