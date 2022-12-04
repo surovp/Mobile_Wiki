@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mobile-project"
+version = "0.1.0"
+description = "This is diploma project for mobile autotests with used Browserstack."
+authors = ["Pavel Surov <surov_p@tanukitech.ru>"]
+readme = "README.md"
+packages = [{include = "tests"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Appium-Python-Client = "2.6.1"
+selene = {version = "^2.0.0-beta.8", allow-prereleases = true}
+pytest = "^7.1.3"
+allure-pytest = "^2.10.0"
+python-dotenv = "^0.21.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
