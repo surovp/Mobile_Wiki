@@ -34,6 +34,6 @@ def app_config():
             # Set your access credentials
             "userName": USER_NAME,
             "accessKey": KEY
-    }
-})
+        }
+    })
     browser.config.driver = webdriver.Remote("http://hub.browserstack.com/wd/hub", options=options)
