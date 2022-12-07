@@ -32,7 +32,7 @@
 <!-- Jenkins -->
 
 ### <img width="3%" title="Jenkins" src="images/logo_stacks/jenkins.png">  Запуск проекта в Jenkins
-### [Job](https://jenkins.autotests.cloud/job/UI_demoqa_qa_guru_python_2/)
+### [Job](https://jenkins.autotests.cloud/job/Mobile_Wikipedia_qa_guru_python_2/)
 ##### При нажатии на "Собрать сейчас" начнется сборка тестов и их прохождение, через виртуальную машину в Selenide.
 ![This is an image](images/screenshots/jenkins.png)
 
